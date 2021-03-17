@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+
+		#main-content{
+			width:40%;
+			margin: 0 auto;
+			margin-top:15%;
+		}
+		ul li{
+			background: #eee;
+			list-style: none;
+			padding: 4px;
+			margin-top:4px;
+			display: block;
+			width: 45%;
+			cursor:pointer;
+		}
+		ul li:hover{
+			background: skyblue;
+		}
+
+		#main-content{
+			border: 1px solid black;
+			padding: 6px;
+			width: 50%;
+			min-height: 200px;
+		}
+
+ 		#main-content form input , #main-content form label{
+ 			display: block;
+ 			margin-top: 4px;
+ 			padding: 4px;
+ 		}
+
+		 #main-content form label{
+ 			margin-top: 8px;
+ 		
+ 		}
+ 
+
+	</style>
+</head>
+<body>
+<div id="main-content">	
+</div>
+</body>
+
+<template id="crear-encuestas">	
+	<center>	
+		<div>
+			<h2>Crea una encuenta</h2>
+		</div>
+		<form id="form-encuestas" action="crear-encuestas">
+			<label>Titulo de la encuenta</label>
+			<input type="text" name="titulo" id="text-encuesta">
+			<input type="submit" name="Crear Encuesta" id="crear-encuesta" value="Crear Encuesta">
+		</form>
+	</center>
+</template>	
+
+
+<template id="crear-preguntas">	
+	<center>	
+		<div>
+			<h2>Ingrese la pregunta</h2>
+		</div>
+		<form id="form-preguntas" action="crear-preguntas">
+			<label>Introduce una pregunta</label>			
+			<input type="text" name="pregunta" id="text-pregunta">
+			<input type="submit" name="" id="crear-pregunta" value="Crear Pregunta">
+			<input type="submit" name="" id="main-back" value="Crear nueva encuesta">
+		</form>
+	</center>
+</template>	
+
+
+<template id="crear-respuestas">	
+	<center>	
+		<div>
+			<h2>Introduce las respuestas</h2>
+		</div>
+		<form id="form-respuestas">
+			<label>Introduce la Respuesta</label>
+			<br>
+			<input type="text" name="respuesta" id="text-respuestas">
+			<input type="submit" name="" id="crear-respuestas" value="Crear Respuesta">
+			<input type="submit" name="" id="back" value="Crear nueva pregunta">
+		</form>
+	</center>
+</template>	
+
+
+
+
+
+<script src="main.js"></script>
+</html>
