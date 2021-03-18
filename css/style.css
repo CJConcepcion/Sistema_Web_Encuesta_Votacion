@@ -1,0 +1,26 @@
+
+.relation{
+	margin-left: 40%;
+}
+
+.relation:hover{
+border-radius:30%;
+-webkit-border-radius:30%;
+box-shadow: 0px 0px 5px 5px #3498DB ;
+-webkit-box-shadow: 0px 0px 3px 3px #3498DB ;
+transform: rotate(360deg);
+-webkit-transform: rotate(360deg);
+}
+
+.span4{
+	margin-left: 8%;
+}
+
+.thumbnail:hover{
+-webkit-transform:scale(1.1);
+transform:scale(1.1);
+-webkit-box-shadow: 0px 0px 15px 15px #3498DB ;
+}
+
+
+
